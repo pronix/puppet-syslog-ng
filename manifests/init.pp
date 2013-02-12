@@ -3,6 +3,7 @@ class syslog-ng {
   case $operatingsystem {
     Debian: { $ostmpl = "syslog-ng/syslog-ng.debian.conf.erb" }
     RedHat:  { $ostmpl = "syslog-ng/syslog-ng.redhat.conf.erb" }
+    CentOS:  { $ostmpl = "syslog-ng/syslog-ng.redhat.conf.erb" }
     default: { fail "Unsupported operatingsystem ${operatingsystem}" }
   }
 
